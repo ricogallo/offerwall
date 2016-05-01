@@ -1,0 +1,105 @@
+/*
+  Disclaimer: this style is based on BEM naming convention
+*/
+.offers, .offers__taglist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offers__item {
+  background-color: white;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 2em auto;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjE3NSA0NzcuMTc1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8cGF0aCBkPSJNMzYwLjczMSwyMjkuMDc1bC0yMjUuMS0yMjUuMWMtNS4zLTUuMy0xMy44LTUuMy0xOS4xLDBzLTUuMywxMy44LDAsMTkuMWwyMTUuNSwyMTUuNWwtMjE1LjUsMjE1LjUgICBjLTUuMyw1LjMtNS4zLDEzLjgsMCwxOS4xYzIuNiwyLjYsNi4xLDQsOS41LDRjMy40LDAsNi45LTEuMyw5LjUtNGwyMjUuMS0yMjUuMUMzNjUuOTMxLDI0Mi44NzUsMzY1LjkzMSwyMzQuMjc1LDM2MC43MzEsMjI5LjA3NXogICAiIGZpbGw9IiNjZmNmY2YiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  line-height: 3em;
+  height: 6em;
+  padding: 1em;
+  margin-right: 1em;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.offers__banner {
+  float: left;
+  width: 4em;
+  height: 4em;
+  max-width: 25%;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.offers__body {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  position: relative;
+  height: 4em;
+  width: 100%;
+  max-width: 50%;
+  overflow-x: hidden;
+}
+
+.offers__title {
+}
+
+.offers__taglist {
+  position: absolute;
+  bottom: 0;
+}
+  
+.offers__tag {
+  display: inline-block;
+  background-color: rgb(63, 167, 226);
+  color: white;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding: 0.3em 0.5em;
+  border-radius: 0.2em;
+}
+
+.offers__credits-container {
+  position: relative;
+  bottom: 0.5em;
+  display: table;
+  float: right;
+  line-height: normal;
+  text-align: center;
+  margin-right: 1.5em;
+  background-color: rgb(255, 128, 111);
+  border-radius: 0.2em;
+  color: white;
+  width: 4em;
+  height: 4em;
+  max-width: 25%;
+}
+
+.offers__credits-counter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.offers__credits-counter::before {
+  content: '+';
+}
+
+.offers__credits-counter::after {
+  font-size: 0.3em;
+  content: ' CREDITS';
+}
+
+.offers__hint {
+  position: absolute;
+  bottom: -1.5em;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 0.3em;
+}
